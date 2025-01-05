@@ -1,6 +1,6 @@
-package com.example.userserver.follow;
+package com.gio.userserver.follow;
 
-import com.example.userserver.user.UserInfo;
+import com.gio.userserver.user.UserInfo;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

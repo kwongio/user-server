@@ -1,6 +1,6 @@
-package com.example.userserver.follow;
+package com.gio.userserver.follow;
 
-import com.example.userserver.user.UserInfo;
+import com.gio.userserver.user.UserInfo;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

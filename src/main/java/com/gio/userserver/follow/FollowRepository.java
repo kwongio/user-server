@@ -1,6 +1,6 @@
-package com.example.userserver.follow;
+package com.gio.userserver.follow;
 
-import com.example.userserver.user.UserInfo;
+import com.gio.userserver.user.UserInfo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -13,11 +13,11 @@ public interface FollowRepository extends JpaRepository<Follow, Integer> {
 
     Follow findByUserIdAndFollowerId(int userId, int followerId);
 
-    @Query(value = "SELECT new com.example.userserver.user.UserInfo(u.userId, u.username, u.email) FROM Follow f, User u WHERE f.userId = :userId and u.userId = f.followerId")
+    @Query(value = "SELECT new com.gio.userserver.user.UserInfo(u.userId, u.username, u.email) FROM Follow f, User u WHERE f.userId = :userId and u.userId = f.followerId")
     List<UserInfo> findFollowersByUserId(@Param("userId") int userId);
 
 
-    @Query(value = "SELECT new com.example.userserver.user.UserInfo(u.userId, u.username, u.email) FROM Follow f, User u WHERE f.followerId = :userId and u.userId = f.userId")
+    @Query(value = "SELECT new com.gio.userserver.user.UserInfo(u.userId, u.username, u.email) FROM Follow f, User u WHERE f.followerId = :userId and u.userId = f.userId")
     List<UserInfo> findFollowingByUserId(@Param("userId") int userId);
 
 }

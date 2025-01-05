@@ -1,4 +1,4 @@
-package com.example.userserver.user;
+package com.gio.userserver.user;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

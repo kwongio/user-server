@@ -1,4 +1,4 @@
-package com.example.userserver.user;
+package com.gio.userserver.user;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

@@ -1,4 +1,4 @@
-package com.example.userserver.user;
+package com.gio.userserver.user;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;

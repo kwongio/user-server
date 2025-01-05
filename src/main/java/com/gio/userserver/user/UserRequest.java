@@ -1,5 +1,11 @@
-package com.example.userserver.user;
+package com.gio.userserver.user;
 
+
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@AllArgsConstructor
 public class UserRequest {
     private String username;
     private String email;

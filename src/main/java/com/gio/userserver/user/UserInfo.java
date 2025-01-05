@@ -1,4 +1,4 @@
-package com.example.userserver.user;
+package com.gio.userserver.user;
 
 public class UserInfo {
     private int userId;

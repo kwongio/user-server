@@ -1,9 +1,9 @@
-package com.example.userserver.user;
+package com.gio.userserver.user;
 
 import jakarta.persistence.*;
 
 @Entity
-@Table
+@Table(name = "users")
 public class User {
 
     @Id

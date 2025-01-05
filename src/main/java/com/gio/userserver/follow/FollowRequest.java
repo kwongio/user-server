@@ -1,4 +1,4 @@
-package com.example.userserver.follow;
+package com.gio.userserver.follow;
 
 public class FollowRequest {
 
